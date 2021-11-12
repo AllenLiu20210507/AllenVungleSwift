@@ -1,0 +1,16 @@
+PODS:
+  - VungleSDK-iOS (6.10.3)
+
+DEPENDENCIES:
+  - VungleSDK-iOS (= 6.10.3)
+
+SPEC REPOS:
+  trunk:
+    - VungleSDK-iOS
+
+SPEC CHECKSUMS:
+  VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
+
+PODFILE CHECKSUM: bac1c8d4bafe7fafdf438cef2542b67059421c34
+
+COCOAPODS: 1.11.2
