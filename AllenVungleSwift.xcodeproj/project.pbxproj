@@ -16,6 +16,10 @@
 		37815C02273E524E001C7C17 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815BFF273E524D001C7C17 /* MyConstant.swift */; };
 		37815C0F273E56F7001C7C17 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815C0D273E56F7001C7C17 /* MyViewController.swift */; };
 		37815C10273E56F7001C7C17 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37815C0E273E56F7001C7C17 /* MyViewController.xib */; };
+		379B8AEE274CDF7A00626C55 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AEC274CDF7A00626C55 /* NativeViewController.swift */; };
+		379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AED274CDF7A00626C55 /* NativeViewController.xib */; };
+		379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */; };
+		379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */; };
 		7B2D30333A6AEBFC3872422D /* libPods-AllenVungleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9AA120C6EA6F064779E8B5 /* libPods-AllenVungleSwift.a */; };
 		B550FE547BB618F532309418 /* libPods-AllenVungleSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDC61B1735E330575DF6397 /* libPods-AllenVungleSwiftTests.a */; };
 /* End PBXBuildFile section */
@@ -55,6 +59,10 @@
 		37815C05273E5345001C7C17 /* AllenVungleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllenVungleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		37815C0D273E56F7001C7C17 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		37815C0E273E56F7001C7C17 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		379B8AEC274CDF7A00626C55 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		379B8AED274CDF7A00626C55 /* NativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewController.xib; sourceTree = "<group>"; };
+		379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNativeViewController.swift; sourceTree = "<group>"; };
+		379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalNativeViewController.xib; sourceTree = "<group>"; };
 		45449FEEF39511D7280FC15C /* Pods-AllenVungleSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		7391221847FBCCB101F8A96E /* Pods-AllenVungleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwift.release.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwift/Pods-AllenVungleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E068A642F5CC8EB113FD145D /* Pods-AllenVungleSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 				37815C05273E5345001C7C17 /* AllenVungleSwift-Bridging-Header.h */,
 				37815C0D273E56F7001C7C17 /* MyViewController.swift */,
 				37815C0E273E56F7001C7C17 /* MyViewController.xib */,
+				379B8AEC274CDF7A00626C55 /* NativeViewController.swift */,
+				379B8AED274CDF7A00626C55 /* NativeViewController.xib */,
+				379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */,
+				379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */,
 			);
 			path = AllenVungleSwift;
 			sourceTree = "<group>";
@@ -270,6 +282,8 @@
 			files = (
 				37815BD9273E51F9001C7C17 /* Assets.xcassets in Resources */,
 				37815C10273E56F7001C7C17 /* MyViewController.xib in Resources */,
+				379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */,
+				379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379B8AEE274CDF7A00626C55 /* NativeViewController.swift in Sources */,
 				37815C02273E524E001C7C17 /* MyConstant.swift in Sources */,
+				379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */,
 				37815BCD273E51F6001C7C17 /* AppDelegate.swift in Sources */,
 				37815C0F273E56F7001C7C17 /* MyViewController.swift in Sources */,
 				37815BD7273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld in Sources */,

@@ -236,6 +236,12 @@ class MyViewController: UIViewController,VungleSDKDelegate {
     }
    
     
+    @IBAction func onClickGoNativeButton(_ sender: Any) {
+        NativeViewController *nativeVC = [[NativeViewController alloc] init];
+           [self presentViewController:nativeVC animated:YES completion:nil];
+    }
+    
+    
     
     func getScreenDimension(){
         screenHeight = MyConstant.SCREEN_HEIGHT;
