@@ -18,16 +18,21 @@ class NativeViewController: UIViewController {
     
     
     @IBAction func onClickNormalNative(_ sender: Any) {
-        NormalNativeViewController *nnativeVC = [[NormalNativeViewController alloc] init];
-           [self presentViewController:nnativeVC animated:YES completion:nil];
+     
+//        let nnativeVC = NormalNativeViewController()
+//        self.present(nnativeVC, animated: true, completion: nil)
         
     }
     
     @IBAction func onClickFeedsNative(_ sender: Any) {
+//        let nativeVC = Feed
+//        self.present(nativeVC, animated: true, completion: nil)
         
     }
     
     @IBAction func onClickSplashNative(_ sender: Any) {
+//        let nativeVC = NativeViewController()
+//        self.present(nativeVC, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

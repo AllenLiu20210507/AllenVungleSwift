@@ -14,6 +14,7 @@ class MyConstant: NSObject {
     static let rewardPlacement:String = "ALLENTESTREWARD-3710821"
     static let bannerPlacement:String = "BANNER_ALLEN_TEST-5090470"
     static let mrecPlacement:String = "ALLENTESTMREC-5581321"
+    static let nativePlacement:String = "ALLEN_TEST_NATIVE-4444571"
     
     
     static let SCREEN_HEIGHT = UIScreen.main.bounds.size.height

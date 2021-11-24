@@ -237,8 +237,9 @@ class MyViewController: UIViewController,VungleSDKDelegate {
    
     
     @IBAction func onClickGoNativeButton(_ sender: Any) {
-        NativeViewController *nativeVC = [[NativeViewController alloc] init];
-           [self presentViewController:nativeVC animated:YES completion:nil];
+        let nativeVC = NativeViewController()
+        self.present(nativeVC, animated: true, completion: nil)
+           
     }
     
     

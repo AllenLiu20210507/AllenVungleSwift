@@ -20,8 +20,7 @@
 		379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AED274CDF7A00626C55 /* NativeViewController.xib */; };
 		379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */; };
 		379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */; };
-		7B2D30333A6AEBFC3872422D /* libPods-AllenVungleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9AA120C6EA6F064779E8B5 /* libPods-AllenVungleSwift.a */; };
-		B550FE547BB618F532309418 /* libPods-AllenVungleSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDC61B1735E330575DF6397 /* libPods-AllenVungleSwiftTests.a */; };
+		379B8AFD274E4F5000626C55 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B8AFC274E4F5000626C55 /* VungleSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07FCE76596C8F16C83110DB7 /* Pods-AllenVungleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwift.debug.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwift/Pods-AllenVungleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		1CDC61B1735E330575DF6397 /* libPods-AllenVungleSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllenVungleSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A9AA120C6EA6F064779E8B5 /* libPods-AllenVungleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllenVungleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37815BC9273E51F6001C7C17 /* AllenVungleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllenVungleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37815BCC273E51F6001C7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37815BD6273E51F6001C7C17 /* AllenVungleSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllenVungleSwift.xcdatamodel; sourceTree = "<group>"; };
@@ -63,9 +59,7 @@
 		379B8AED274CDF7A00626C55 /* NativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewController.xib; sourceTree = "<group>"; };
 		379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNativeViewController.swift; sourceTree = "<group>"; };
 		379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalNativeViewController.xib; sourceTree = "<group>"; };
-		45449FEEF39511D7280FC15C /* Pods-AllenVungleSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		7391221847FBCCB101F8A96E /* Pods-AllenVungleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwift.release.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwift/Pods-AllenVungleSwift.release.xcconfig"; sourceTree = "<group>"; };
-		E068A642F5CC8EB113FD145D /* Pods-AllenVungleSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllenVungleSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		379B8AFC274E4F5000626C55 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2D30333A6AEBFC3872422D /* libPods-AllenVungleSwift.a in Frameworks */,
+				379B8AFD274E4F5000626C55 /* VungleSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B550FE547BB618F532309418 /* libPods-AllenVungleSwiftTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +95,6 @@
 				37815BE5273E51F9001C7C17 /* AllenVungleSwiftTests */,
 				37815BEF273E51F9001C7C17 /* AllenVungleSwiftUITests */,
 				37815BCA273E51F6001C7C17 /* Products */,
-				98C59527C0D29D520A303835 /* Pods */,
 				CF2473ED1DD339DBC23B8DC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -153,22 +145,10 @@
 			path = AllenVungleSwiftUITests;
 			sourceTree = "<group>";
 		};
-		98C59527C0D29D520A303835 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				07FCE76596C8F16C83110DB7 /* Pods-AllenVungleSwift.debug.xcconfig */,
-				7391221847FBCCB101F8A96E /* Pods-AllenVungleSwift.release.xcconfig */,
-				E068A642F5CC8EB113FD145D /* Pods-AllenVungleSwiftTests.debug.xcconfig */,
-				45449FEEF39511D7280FC15C /* Pods-AllenVungleSwiftTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CF2473ED1DD339DBC23B8DC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A9AA120C6EA6F064779E8B5 /* libPods-AllenVungleSwift.a */,
-				1CDC61B1735E330575DF6397 /* libPods-AllenVungleSwiftTests.a */,
+				379B8AFC274E4F5000626C55 /* VungleSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,7 +160,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37815BF6273E51F9001C7C17 /* Build configuration list for PBXNativeTarget "AllenVungleSwift" */;
 			buildPhases = (
-				108C912312849097DC1B79F4 /* [CP] Check Pods Manifest.lock */,
 				37815BC5273E51F6001C7C17 /* Sources */,
 				37815BC6273E51F6001C7C17 /* Frameworks */,
 				37815BC7273E51F6001C7C17 /* Resources */,
@@ -198,7 +177,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37815BF9273E51F9001C7C17 /* Build configuration list for PBXNativeTarget "AllenVungleSwiftTests" */;
 			buildPhases = (
-				BE0117AA345E6AB9ABA1B889 /* [CP] Check Pods Manifest.lock */,
 				37815BDE273E51F9001C7C17 /* Sources */,
 				37815BDF273E51F9001C7C17 /* Frameworks */,
 				37815BE0273E51F9001C7C17 /* Resources */,
@@ -302,53 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		108C912312849097DC1B79F4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AllenVungleSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE0117AA345E6AB9ABA1B889 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AllenVungleSwiftTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37815BC5273E51F6001C7C17 /* Sources */ = {
@@ -515,7 +446,6 @@
 		};
 		37815BF7273E51F9001C7C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07FCE76596C8F16C83110DB7 /* Pods-AllenVungleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,6 +453,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AllenVungleSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -546,7 +480,6 @@
 		};
 		37815BF8273E51F9001C7C17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7391221847FBCCB101F8A96E /* Pods-AllenVungleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +487,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AllenVungleSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -576,7 +513,6 @@
 		};
 		37815BFA273E51F9001C7C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E068A642F5CC8EB113FD145D /* Pods-AllenVungleSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -602,7 +538,6 @@
 		};
 		37815BFB273E51F9001C7C17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45449FEEF39511D7280FC15C /* Pods-AllenVungleSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
