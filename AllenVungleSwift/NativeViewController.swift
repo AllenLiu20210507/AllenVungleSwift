@@ -11,7 +11,9 @@ class NativeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let navigationBar = UINavigationBar.appearance()
+        navigationBar.tintColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     
@@ -19,9 +21,8 @@ class NativeViewController: UIViewController {
     
     @IBAction func onClickNormalNative(_ sender: Any) {
      
-//        let nnativeVC = NormalNativeViewController()
-//        self.present(nnativeVC, animated: true, completion: nil)
-        
+        let nnativeVC = NormalNativeViewController()
+        self.navigationController?.pushViewController(nnativeVC, animated: true)
     }
     
     @IBAction func onClickFeedsNative(_ sender: Any) {

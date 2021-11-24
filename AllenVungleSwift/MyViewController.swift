@@ -118,6 +118,15 @@ class MyViewController: UIViewController,VungleSDKDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func onClickGoNative(_ sender: Any) {
+        
+        let nativeVC = NativeViewController()
+        self.navigationController?.pushViewController(nativeVC, animated: true)
+           
+    }
+    
     @IBAction func OnClickInitButton(_ sender: Any) {
        startVungle()
     }

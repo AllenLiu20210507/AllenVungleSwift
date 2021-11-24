@@ -20,7 +20,7 @@
 		379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AED274CDF7A00626C55 /* NativeViewController.xib */; };
 		379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */; };
 		379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */; };
-		379B8AFD274E4F5000626C55 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B8AFC274E4F5000626C55 /* VungleSDK.framework */; };
+		37C0683F274E59CD0056FA66 /* VungleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		379B8AED274CDF7A00626C55 /* NativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewController.xib; sourceTree = "<group>"; };
 		379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNativeViewController.swift; sourceTree = "<group>"; };
 		379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalNativeViewController.xib; sourceTree = "<group>"; };
-		379B8AFC274E4F5000626C55 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VungleSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379B8AFD274E4F5000626C55 /* VungleSDK.framework in Frameworks */,
+				37C0683F274E59CD0056FA66 /* VungleSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		CF2473ED1DD339DBC23B8DC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				379B8AFC274E4F5000626C55 /* VungleSDK.framework */,
+				37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -468,6 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -502,6 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -527,6 +529,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -552,6 +555,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -575,6 +579,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -598,6 +603,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = vungle.AllenVungleSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
