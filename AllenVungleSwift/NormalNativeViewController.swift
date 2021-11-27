@@ -58,6 +58,7 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
     @IBAction func onClickLoadNative(_ sender: Any) {
         self.loadingView.startAnimating()
         self.view.addSubview(self.loadingView)
+        self.vungleNativeAd.load()
 
     }
 
@@ -65,11 +66,25 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
         cleanupTextFields()
+        self.vungleNativeAd.unregisterView()
     }
     @IBAction func onClickCtaButton(_ sender: Any) {
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
+        showAlert()
     }
+    
+    
+    
+    func showAlert(){
+
+           let alert = UIAlertView(title: "Note", message: "You click the CTA button", delegate: self, cancelButtonTitle: "Swag!")
+
+           alert.alertViewStyle = UIAlertViewStyle.default
+
+           alert.show()
+
+       }
 
     //pragma mark - VungleNativeAdDelegate Methods
 
@@ -79,15 +94,18 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
         print("nativeAdDidLoad",nativeAd)
         let rate = nativeAd.adStarRating
         titleLabel.text = nativeAd.title
-        rateNumberLabel.text =    NSString( format: "%ld", rate ) as String
+        let ratestring:String = NSString(format: "%.2f" , rate) as String
+        rateNumberLabel.text = ratestring
         bodyTextLabel.text = nativeAd.bodyText
         iconView.image = nativeAd.iconImage
+        
         sponsoredByLabel.text = nativeAd.sponsoredText
 
         // Set all UIViews as "clickable"
 
-//        var clickableViews:Array<UIView> = [self.iconView,self.vungleMediaView,self.titleLabel,self.bodyTextLabel]
-        self.vungleNativeAd.registerView(forInteraction: self.titleLabel, mediaView: self.vungleMediaView, iconImageView: self.iconView,viewController: self)
+        let clickableViews:Array<UIView> = [self.iconView,self.vungleMediaView,self.titleLabel,self.bodyTextLabel]
+//        self.vungleNativeAd.registerView(forInteraction: self.titleLabel, mediaView: self.vungleMediaView, iconImageView: self.iconView,viewController: self)
+        self.vungleNativeAd.registerView(forInteraction: self.iconView, mediaView: self.vungleMediaView, iconImageView: self.iconView, viewController: self, clickableViews: clickableViews)
 //        [self.nativeAd registerViewForInteraction:self.adUIView
 //                                        mediaView:self.adMediaView
 //                                    iconImageView:self.adIconImageView

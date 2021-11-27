@@ -33,11 +33,7 @@ class MyViewController: UIViewController,VungleSDKDelegate {
     var screenWidth:CGFloat?
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 14, *){
-            ATTrackingManager.requestTrackingAuthorization {status in
-                print("status %@", status)
-            }
-        }
+     
         self.setViewDefalut()
         // Do any additional setup after loading the view.
     }

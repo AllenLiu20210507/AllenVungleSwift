@@ -26,8 +26,9 @@ class NativeViewController: UIViewController {
     }
     
     @IBAction func onClickFeedsNative(_ sender: Any) {
-//        let nativeVC = Feed
-//        self.present(nativeVC, animated: true, completion: nil)
+        let fnativeVC = FeedsNativeViewController()
+        self.navigationController?.pushViewController(fnativeVC, animated: true)
+        
         
     }
     

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37400204274F96CC00A4FBB2 /* FeedsNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37400202274F96CC00A4FBB2 /* FeedsNativeViewController.swift */; };
+		37400205274F96CC00A4FBB2 /* FeedsNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */; };
+		37400208274F98B200A4FBB2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37400206274F98B200A4FBB2 /* MyTableViewCell.swift */; };
+		37400209274F98B200A4FBB2 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37400207274F98B200A4FBB2 /* MyTableViewCell.xib */; };
 		37815BCD273E51F6001C7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815BCC273E51F6001C7C17 /* AppDelegate.swift */; };
 		37815BD7273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37815BD5273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld */; };
 		37815BD9273E51F9001C7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37815BD8273E51F9001C7C17 /* Assets.xcassets */; };
@@ -16,11 +20,16 @@
 		37815C02273E524E001C7C17 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815BFF273E524D001C7C17 /* MyConstant.swift */; };
 		37815C0F273E56F7001C7C17 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815C0D273E56F7001C7C17 /* MyViewController.swift */; };
 		37815C10273E56F7001C7C17 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37815C0E273E56F7001C7C17 /* MyViewController.xib */; };
+		3781A309274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A307274F8DD000E3D564 /* VungleSDK.xcframework */; };
+		3781A30A274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A307274F8DD000E3D564 /* VungleSDK.xcframework */; };
+		3781A30B274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A307274F8DD000E3D564 /* VungleSDK.xcframework */; };
+		3781A30C274F8DD100E3D564 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A308274F8DD100E3D564 /* VungleSDK.framework */; };
+		3781A30D274F8DD100E3D564 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A308274F8DD100E3D564 /* VungleSDK.framework */; };
+		3781A30E274F8DD100E3D564 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781A308274F8DD100E3D564 /* VungleSDK.framework */; };
 		379B8AEE274CDF7A00626C55 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AEC274CDF7A00626C55 /* NativeViewController.swift */; };
 		379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AED274CDF7A00626C55 /* NativeViewController.xib */; };
 		379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */; };
 		379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */; };
-		37C0683F274E59CD0056FA66 /* VungleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37400202274F96CC00A4FBB2 /* FeedsNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsNativeViewController.swift; sourceTree = "<group>"; };
+		37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsNativeViewController.xib; sourceTree = "<group>"; };
+		37400206274F98B200A4FBB2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		37400207274F98B200A4FBB2 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		37815BC9273E51F6001C7C17 /* AllenVungleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllenVungleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37815BCC273E51F6001C7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37815BD6273E51F6001C7C17 /* AllenVungleSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllenVungleSwift.xcdatamodel; sourceTree = "<group>"; };
@@ -55,11 +68,12 @@
 		37815C05273E5345001C7C17 /* AllenVungleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllenVungleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		37815C0D273E56F7001C7C17 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		37815C0E273E56F7001C7C17 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		3781A307274F8DD000E3D564 /* VungleSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VungleSDK.xcframework; sourceTree = "<group>"; };
+		3781A308274F8DD100E3D564 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		379B8AEC274CDF7A00626C55 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		379B8AED274CDF7A00626C55 /* NativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewController.xib; sourceTree = "<group>"; };
 		379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNativeViewController.swift; sourceTree = "<group>"; };
 		379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalNativeViewController.xib; sourceTree = "<group>"; };
-		37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VungleSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C0683F274E59CD0056FA66 /* VungleSDK.xcframework in Frameworks */,
+				3781A30C274F8DD100E3D564 /* VungleSDK.framework in Frameworks */,
+				3781A309274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3781A30D274F8DD100E3D564 /* VungleSDK.framework in Frameworks */,
+				3781A30A274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3781A30E274F8DD100E3D564 /* VungleSDK.framework in Frameworks */,
+				3781A30B274F8DD100E3D564 /* VungleSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +143,10 @@
 				379B8AED274CDF7A00626C55 /* NativeViewController.xib */,
 				379B8AF0274CE3EF00626C55 /* NormalNativeViewController.swift */,
 				379B8AF1274CE3EF00626C55 /* NormalNativeViewController.xib */,
+				37400202274F96CC00A4FBB2 /* FeedsNativeViewController.swift */,
+				37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */,
+				37400206274F98B200A4FBB2 /* MyTableViewCell.swift */,
+				37400207274F98B200A4FBB2 /* MyTableViewCell.xib */,
 			);
 			path = AllenVungleSwift;
 			sourceTree = "<group>";
@@ -148,7 +171,8 @@
 		CF2473ED1DD339DBC23B8DC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37C0683E274E59CD0056FA66 /* VungleSDK.xcframework */,
+				3781A308274F8DD100E3D564 /* VungleSDK.framework */,
+				3781A307274F8DD000E3D564 /* VungleSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,8 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37815BD9273E51F9001C7C17 /* Assets.xcassets in Resources */,
+				37400209274F98B200A4FBB2 /* MyTableViewCell.xib in Resources */,
 				37815C10273E56F7001C7C17 /* MyViewController.xib in Resources */,
 				379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */,
+				37400205274F96CC00A4FBB2 /* FeedsNativeViewController.xib in Resources */,
 				379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				379B8AEE274CDF7A00626C55 /* NativeViewController.swift in Sources */,
+				37400208274F98B200A4FBB2 /* MyTableViewCell.swift in Sources */,
 				37815C02273E524E001C7C17 /* MyConstant.swift in Sources */,
+				37400204274F96CC00A4FBB2 /* FeedsNativeViewController.swift in Sources */,
 				379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */,
 				37815BCD273E51F6001C7C17 /* AppDelegate.swift in Sources */,
 				37815C0F273E56F7001C7C17 /* MyViewController.swift in Sources */,
@@ -452,7 +480,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				DEVELOPMENT_TEAM = GTA9LK7P23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -487,7 +515,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				DEVELOPMENT_TEAM = GTA9LK7P23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -521,6 +549,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -547,6 +579,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +608,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,6 +636,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

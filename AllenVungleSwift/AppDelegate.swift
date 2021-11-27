@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import Foundation
+import AppTrackingTransparency
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if #available(iOS 14, *){
+            ATTrackingManager.requestTrackingAuthorization {status in
+                print("status ", status.rawValue)
+            }
+        }
+    }
   
     // MARK: - Core Data stack
 
