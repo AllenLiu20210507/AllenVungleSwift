@@ -49,7 +49,7 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
 
                 let clickableViews:Array<UIView> = [myCell.myCellIconView,myCell.myCellVungleView,myCell.myCellTitle,myCell.myCellBody]
 
-                self.vungleNativeAd.registerView(forInteraction: myCell.myCellIconView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self, clickableViews: clickableViews)
+                self.vungleNativeAd.registerView(forInteraction: myCell.myContentView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self, clickableViews: clickableViews)
             print("allen__return myCell ",indexPath.row)
             return myCell
           

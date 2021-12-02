@@ -11,6 +11,7 @@ class MyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var myCellBody: UILabel!
 
+    @IBOutlet weak var myContentView: UIView!
     @IBOutlet weak var myCellCTABtn: UIButton!
     @IBOutlet weak var myCellVungleView: VungleMediaView!
     @IBOutlet weak var myCellRate: UILabel!

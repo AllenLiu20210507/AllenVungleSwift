@@ -11,6 +11,10 @@
 		37400205274F96CC00A4FBB2 /* FeedsNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */; };
 		37400208274F98B200A4FBB2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37400206274F98B200A4FBB2 /* MyTableViewCell.swift */; };
 		37400209274F98B200A4FBB2 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37400207274F98B200A4FBB2 /* MyTableViewCell.xib */; };
+		3770712E275497140020BB83 /* FullScreenNativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3770712C275497140020BB83 /* FullScreenNativeVC.swift */; };
+		3770712F275497140020BB83 /* FullScreenNativeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3770712D275497140020BB83 /* FullScreenNativeVC.xib */; };
+		37707132275498870020BB83 /* MyFullTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37707130275498870020BB83 /* MyFullTableViewCell.swift */; };
+		37707133275498870020BB83 /* MyFullTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37707131275498870020BB83 /* MyFullTableViewCell.xib */; };
 		37815BCD273E51F6001C7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37815BCC273E51F6001C7C17 /* AppDelegate.swift */; };
 		37815BD7273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37815BD5273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld */; };
 		37815BD9273E51F9001C7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37815BD8273E51F9001C7C17 /* Assets.xcassets */; };
@@ -54,6 +58,10 @@
 		37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsNativeViewController.xib; sourceTree = "<group>"; };
 		37400206274F98B200A4FBB2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		37400207274F98B200A4FBB2 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		3770712C275497140020BB83 /* FullScreenNativeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenNativeVC.swift; sourceTree = "<group>"; };
+		3770712D275497140020BB83 /* FullScreenNativeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenNativeVC.xib; sourceTree = "<group>"; };
+		37707130275498870020BB83 /* MyFullTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFullTableViewCell.swift; sourceTree = "<group>"; };
+		37707131275498870020BB83 /* MyFullTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFullTableViewCell.xib; sourceTree = "<group>"; };
 		37815BC9273E51F6001C7C17 /* AllenVungleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllenVungleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37815BCC273E51F6001C7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37815BD6273E51F6001C7C17 /* AllenVungleSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllenVungleSwift.xcdatamodel; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 				37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */,
 				37400206274F98B200A4FBB2 /* MyTableViewCell.swift */,
 				37400207274F98B200A4FBB2 /* MyTableViewCell.xib */,
+				3770712C275497140020BB83 /* FullScreenNativeVC.swift */,
+				3770712D275497140020BB83 /* FullScreenNativeVC.xib */,
+				37707130275498870020BB83 /* MyFullTableViewCell.swift */,
+				37707131275498870020BB83 /* MyFullTableViewCell.xib */,
 			);
 			path = AllenVungleSwift;
 			sourceTree = "<group>";
@@ -201,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37815BF9273E51F9001C7C17 /* Build configuration list for PBXNativeTarget "AllenVungleSwiftTests" */;
 			buildPhases = (
+				2E918BA771329527852559E6 /* [CP] Check Pods Manifest.lock */,
 				37815BDE273E51F9001C7C17 /* Sources */,
 				37815BDF273E51F9001C7C17 /* Frameworks */,
 				37815BE0273E51F9001C7C17 /* Resources */,
+				DCED6B9800C80D2D914DA75C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37815BFC273E51F9001C7C17 /* Build configuration list for PBXNativeTarget "AllenVungleSwiftUITests" */;
 			buildPhases = (
+				BFB2E77CB0E28D4B0FBFC67C /* [CP] Check Pods Manifest.lock */,
 				37815BE8273E51F9001C7C17 /* Sources */,
 				37815BE9273E51F9001C7C17 /* Frameworks */,
 				37815BEA273E51F9001C7C17 /* Resources */,
@@ -282,9 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3770712F275497140020BB83 /* FullScreenNativeVC.xib in Resources */,
 				37815BD9273E51F9001C7C17 /* Assets.xcassets in Resources */,
 				37400209274F98B200A4FBB2 /* MyTableViewCell.xib in Resources */,
 				37815C10273E56F7001C7C17 /* MyViewController.xib in Resources */,
+				37707133275498870020BB83 /* MyFullTableViewCell.xib in Resources */,
 				379B8AF3274CE3EF00626C55 /* NormalNativeViewController.xib in Resources */,
 				37400205274F96CC00A4FBB2 /* FeedsNativeViewController.xib in Resources */,
 				379B8AEF274CDF7A00626C55 /* NativeViewController.xib in Resources */,
@@ -307,6 +324,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E918BA771329527852559E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllenVungleSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB2E77CB0E28D4B0FBFC67C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllenVungleSwift-AllenVungleSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCED6B9800C80D2D914DA75C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AllenVungleSwiftTests/Pods-AllenVungleSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37815BC5273E51F6001C7C17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,10 +397,12 @@
 				37400208274F98B200A4FBB2 /* MyTableViewCell.swift in Sources */,
 				37815C02273E524E001C7C17 /* MyConstant.swift in Sources */,
 				37400204274F96CC00A4FBB2 /* FeedsNativeViewController.swift in Sources */,
+				37707132275498870020BB83 /* MyFullTableViewCell.swift in Sources */,
 				379B8AF2274CE3EF00626C55 /* NormalNativeViewController.swift in Sources */,
 				37815BCD273E51F6001C7C17 /* AppDelegate.swift in Sources */,
 				37815C0F273E56F7001C7C17 /* MyViewController.swift in Sources */,
 				37815BD7273E51F6001C7C17 /* AllenVungleSwift.xcdatamodeld in Sources */,
+				3770712E275497140020BB83 /* FullScreenNativeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

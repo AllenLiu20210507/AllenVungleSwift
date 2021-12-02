@@ -25,16 +25,18 @@ class NativeViewController: UIViewController {
         self.navigationController?.pushViewController(nnativeVC, animated: true)
     }
     
+    
+   
     @IBAction func onClickFeedsNative(_ sender: Any) {
         let fnativeVC = FeedsNativeViewController()
         self.navigationController?.pushViewController(fnativeVC, animated: true)
         
         
     }
-    
+    // fullscreen native
     @IBAction func onClickSplashNative(_ sender: Any) {
-//        let nativeVC = NativeViewController()
-//        self.present(nativeVC, animated: true, completion: nil)
+        let fnativeVC = FullScreenNativeVC()
+        self.navigationController?.pushViewController(fnativeVC, animated: true)
     }
     /*
     // MARK: - Navigation
