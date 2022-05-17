@@ -13,7 +13,26 @@
 		37202DDB28339415001CED28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37202DDA28339415001CED28 /* Preview Assets.xcassets */; };
 		37202DDD28339415001CED28 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DDC28339415001CED28 /* Persistence.swift */; };
 		37202DE028339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37202DDE28339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld */; };
+		37202DEC28339890001CED28 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DEB28339890001CED28 /* Configs.swift */; };
+		37202DF22833AC38001CED28 /* InterstitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DF12833AC38001CED28 /* InterstitialViewModel.swift */; };
+		37202DF62833AC77001CED28 /* IntestitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DF52833AC77001CED28 /* IntestitialView.swift */; };
+		37202DFB2833C2E6001CED28 /* vng_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37202DF92833C256001CED28 /* vng_ios_sdk.framework */; platformFilter = ios; };
+		37202DFC2833C2E6001CED28 /* vng_ios_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37202DF92833C256001CED28 /* vng_ios_sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37202DFD2833C2E6001CED28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37202DFC2833C2E6001CED28 /* vng_ios_sdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37202DD028339414001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllenSwiftUI_7.0.0_IntegrationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +42,10 @@
 		37202DDA28339415001CED28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37202DDC28339415001CED28 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		37202DDF28339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodel; sourceTree = "<group>"; };
+		37202DEB28339890001CED28 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		37202DF12833AC38001CED28 /* InterstitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewModel.swift; sourceTree = "<group>"; };
+		37202DF52833AC77001CED28 /* IntestitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntestitialView.swift; sourceTree = "<group>"; };
+		37202DF92833C256001CED28 /* vng_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = vng_ios_sdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37202DFB2833C2E6001CED28 /* vng_ios_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +63,7 @@
 		37202DC728339414001CED28 = {
 			isa = PBXGroup;
 			children = (
+				37202DE628339599001CED28 /* frameworks */,
 				37202DD228339414001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest */,
 				37202DD128339414001CED28 /* Products */,
 			);
@@ -55,12 +80,15 @@
 		37202DD228339414001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest */ = {
 			isa = PBXGroup;
 			children = (
+				37202DF12833AC38001CED28 /* InterstitialViewModel.swift */,
+				37202DF52833AC77001CED28 /* IntestitialView.swift */,
 				37202DD328339414001CED28 /* AllenSwiftUI_7_0_0_IntegrationTestApp.swift */,
 				37202DD528339414001CED28 /* ContentView.swift */,
 				37202DD728339415001CED28 /* Assets.xcassets */,
 				37202DDC28339415001CED28 /* Persistence.swift */,
 				37202DDE28339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld */,
 				37202DD928339415001CED28 /* Preview Content */,
+				37202DEB28339890001CED28 /* Configs.swift */,
 			);
 			path = AllenSwiftUI_7.0.0_IntegrationTest;
 			sourceTree = "<group>";
@@ -73,6 +101,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37202DE628339599001CED28 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37202DF92833C256001CED28 /* vng_ios_sdk.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +119,7 @@
 				37202DCC28339414001CED28 /* Sources */,
 				37202DCD28339414001CED28 /* Frameworks */,
 				37202DCE28339414001CED28 /* Resources */,
+				37202DFD2833C2E6001CED28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37202DEC28339890001CED28 /* Configs.swift in Sources */,
 				37202DDD28339415001CED28 /* Persistence.swift in Sources */,
+				37202DF22833AC38001CED28 /* InterstitialViewModel.swift in Sources */,
+				37202DF62833AC77001CED28 /* IntestitialView.swift in Sources */,
 				37202DE028339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld in Sources */,
 				37202DD628339414001CED28 /* ContentView.swift in Sources */,
 				37202DD428339414001CED28 /* AllenSwiftUI_7_0_0_IntegrationTestApp.swift in Sources */,
@@ -204,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,9 +317,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AllenSwiftUI_7.0.0_IntegrationTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				DEVELOPMENT_TEAM = GTA9LK7P23;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = NSUserTrackingUsageDescription;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vungle.AllenSwiftUI-7-0-0-IntegrationTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "vungle.AllenSwiftUI-7-0-0-IntegrationTest1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -306,9 +351,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AllenSwiftUI_7.0.0_IntegrationTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RLMPPVZ6T;
+				DEVELOPMENT_TEAM = GTA9LK7P23;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = NSUserTrackingUsageDescription;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vungle.AllenSwiftUI-7-0-0-IntegrationTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "vungle.AllenSwiftUI-7-0-0-IntegrationTest1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

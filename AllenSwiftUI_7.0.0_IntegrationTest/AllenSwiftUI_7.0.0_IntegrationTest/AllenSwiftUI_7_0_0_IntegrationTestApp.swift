@@ -6,11 +6,30 @@
 //
 
 import SwiftUI
+import vng_ios_sdk
+import AppTrackingTransparency
 
 @main
 struct AllenSwiftUI_7_0_0_IntegrationTestApp: App {
     let persistenceController = PersistenceController.shared
-
+    init() {
+        if Vungle.isInitialized() {
+            print("[AllenTestApp Log] SDK is already initialized on launch? There's a problem.")
+            return
+        }
+        
+        Vungle.initWithAppId(Configs().appId) { error in
+            if let error = error {
+                print("[AllenTestApp Log] SDK failed to initialize with error \(error).")
+            } else {
+                
+                print("[AllenTestApp Log] SDK successfully initialized.")
+                ATTrackingManager.requestTrackingAuthorization { authorizationStatus in
+                    print("[AllenTestApp Log] ATT status \(authorizationStatus.rawValue)")
+                }
+            }
+        }
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
