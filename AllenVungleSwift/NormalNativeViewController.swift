@@ -15,8 +15,11 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ctaButton: UIButton!
     @IBOutlet weak var sponsoredByLabel: UILabel!
+    @IBOutlet weak var myContainerView: UIView!
     var vungleNativeAd: VungleNativeAd!
     var loadingView: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadingView = UIActivityIndicatorView (style:UIActivityIndicatorView.Style.large)
@@ -98,14 +101,28 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
         rateNumberLabel.text = ratestring
         bodyTextLabel.text = nativeAd.bodyText
         iconView.image = nativeAd.iconImage
+        self.vungleNativeAd.adOptionsPosition = NativeAdOptionsPosition.topRight
         
         sponsoredByLabel.text = nativeAd.sponsoredText
+        
+        //invisble items
+//        titleLabel.isHidden=true
+//        rateNumberLabel.isHidden=true
+//        bodyTextLabel.isHidden=true
+//        self.vungleMediaView.isHidden=true
+//        self.sponsoredByLabel.isHidden=true
+//        iconView.isHidden=true
+//        self.myContainerView.isHidden=true
+        
+        
+        //Cover rootview
+        
 
         // Set all UIViews as "clickable"
 
         let clickableViews:Array<UIView> = [self.iconView,self.vungleMediaView,self.titleLabel,self.bodyTextLabel]
 //        self.vungleNativeAd.registerView(forInteraction: self.titleLabel, mediaView: self.vungleMediaView, iconImageView: self.iconView,viewController: self)
-        self.vungleNativeAd.registerView(forInteraction: self.iconView, mediaView: self.vungleMediaView, iconImageView: self.iconView, viewController: self, clickableViews: clickableViews)
+        self.vungleNativeAd.registerView(forInteraction: self.myContainerView, mediaView: self.vungleMediaView, iconImageView: self.iconView, viewController: self, clickableViews: clickableViews)
 //        [self.nativeAd registerViewForInteraction:self.adUIView
 //                                        mediaView:self.adMediaView
 //                                    iconImageView:self.adIconImageView

@@ -23,13 +23,22 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
     }
 
     
- 
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        print("allen__tableView——————didEndDisplaying ",indexPath.row)
+        if indexPath.row%6==0 && indexPath.row != 0 && currentNativeAd != nil{
+            self.vungleNativeAd.unregisterView()
+            self.vungleNativeAd.load()
+        }
 
+    }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        self.vungleNativeAd.load()
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("allen__tableView ",indexPath.row)
-        print("allen__tableView ",currentNativeAd as Any)
+        print("allen__tableView---cellForRowAt",indexPath.row)
+        print("allen__tableView----cellForRowAt ",currentNativeAd as Any)
         if indexPath.row%6==0 && indexPath.row != 0 && currentNativeAd != nil {
             var myCell:MyTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell") as! MyTableViewCell
             if myCell == nil {
@@ -38,6 +47,7 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
             }
                 let rate = currentNativeAd.adStarRating
                 myCell.myCellTitle.text = currentNativeAd.title
+            print("allen__tableView---currentNativeAd.title",currentNativeAd.title)
                 let ratestring:String = NSString(format: "%.2f" , rate) as String
                 myCell.myCellRate.text = ratestring
                 myCell.myCellBody.text = currentNativeAd.bodyText
@@ -49,7 +59,7 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
 
                 let clickableViews:Array<UIView> = [myCell.myCellIconView,myCell.myCellVungleView,myCell.myCellTitle,myCell.myCellBody]
 
-                self.vungleNativeAd.registerView(forInteraction: myCell.myContentView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self, clickableViews: clickableViews)
+                self.currentNativeAd.registerView(forInteraction: myCell.myContentView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self, clickableViews: clickableViews)
             print("allen__return myCell ",indexPath.row)
             return myCell
           

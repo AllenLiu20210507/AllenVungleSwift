@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +13,7 @@
                 <outlet property="bodyTextLabel" destination="hDY-tu-kRi" id="Qek-JO-OtH"/>
                 <outlet property="ctaButton" destination="TsA-mk-ZVO" id="IkU-rS-jPz"/>
                 <outlet property="iconView" destination="gRT-do-1xz" id="6Uv-F7-DmU"/>
+                <outlet property="myContainerView" destination="gRU-83-kZy" id="rJT-VD-Nfn"/>
                 <outlet property="rateNumberLabel" destination="CgC-Ti-SMh" id="OLw-xe-ozc"/>
                 <outlet property="sponsoredByLabel" destination="aTf-HT-D7Y" id="1Sj-lr-g3A"/>
                 <outlet property="titleLabel" destination="6a5-mA-vDg" id="1LD-pV-uMc"/>
@@ -25,10 +26,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-T1-zTF">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-T1-zTF">
                     <rect key="frame" x="9" y="534" width="150" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ooW-5a-krK"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <state key="normal" title="Load Native">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,9 +45,8 @@
                         <action selector="onClickLoadNative:" destination="-1" eventType="touchUpInside" id="eLQ-B5-sPi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjq-NA-tQK">
-                    <rect key="frame" x="236" y="534" width="150" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjq-NA-tQK">
+                    <rect key="frame" x="236" y="534" width="115" height="32"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <state key="normal" title="Destroy Native">
@@ -59,12 +61,11 @@
                         <action selector="onClickDestroyNative:" destination="-1" eventType="touchUpInside" id="HvE-Au-kUT"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-83-kZy" userLabel="NativeCellView">
-                    <rect key="frame" x="0.0" y="120" width="414" height="328"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-83-kZy" userLabel="NativeCellView">
+                    <rect key="frame" x="10" y="120" width="360" height="328"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdg-28-8Jc" customClass="VungleMediaView">
-                            <rect key="frame" x="18" y="83" width="379" height="180"/>
+                            <rect key="frame" x="18" y="83" width="268" height="180"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
@@ -75,23 +76,6 @@
                             <color key="textColor" systemColor="systemPinkColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-mk-ZVO">
-                            <rect key="frame" x="247" y="280" width="150" height="32"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                            <state key="normal" title="CTA button">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <integer key="value" value="16"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="onClickCtaButton:" destination="-1" eventType="touchUpInside" id="U4L-R7-DfE"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-mA-vDg">
                             <rect key="frame" x="111" y="0.0" width="286" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,12 +101,40 @@
                             <rect key="frame" x="18" y="9" width="58" height="56"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-mk-ZVO">
+                            <rect key="frame" x="202" y="280" width="150" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="CTA button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onClickCtaButton:" destination="-1" eventType="touchUpInside" id="U4L-R7-DfE"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gRU-83-kZy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="Qrc-7V-2sH"/>
+                <constraint firstItem="bHt-T1-zTF" firstAttribute="top" secondItem="gRU-83-kZy" secondAttribute="bottom" constant="86" id="Vgz-lB-CZu"/>
+                <constraint firstItem="gRU-83-kZy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Vqs-u0-24s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gRU-83-kZy" secondAttribute="trailing" constant="44" id="bDh-EP-NiV"/>
+                <constraint firstItem="bHt-T1-zTF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="9" id="dtD-uK-ruc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bHt-T1-zTF" secondAttribute="bottom" constant="296" id="et6-C9-hUd"/>
+                <constraint firstItem="zjq-NA-tQK" firstAttribute="leading" secondItem="bHt-T1-zTF" secondAttribute="trailing" constant="77" id="gtt-VS-esH"/>
+                <constraint firstItem="bHt-T1-zTF" firstAttribute="baseline" secondItem="zjq-NA-tQK" secondAttribute="baseline" id="sqm-xo-cGZ"/>
+                <constraint firstItem="zjq-NA-tQK" firstAttribute="top" secondItem="gRU-83-kZy" secondAttribute="bottom" constant="86" id="uxT-LH-P64"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="113.83928571428571"/>
         </view>
     </objects>
