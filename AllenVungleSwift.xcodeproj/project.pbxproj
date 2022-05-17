@@ -37,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		37202DC52833930E001CED28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37202DC12833930C001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37202DAB2833930B001CED28;
+			remoteInfo = AllenSwiftUI_7.0.0_IntegrationTest;
+		};
 		37815BE3273E51F9001C7C17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37815BC1273E51F6001C7C17 /* Project object */;
@@ -54,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37202DC12833930C001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj; path = AllenSwiftUI_7.0.0_IntegrationTest/AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj; sourceTree = "<group>"; };
 		37400202274F96CC00A4FBB2 /* FeedsNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsNativeViewController.swift; sourceTree = "<group>"; };
 		37400203274F96CC00A4FBB2 /* FeedsNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsNativeViewController.xib; sourceTree = "<group>"; };
 		37400206274F98B200A4FBB2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,9 +123,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37202DC22833930C001CED28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37202DC62833930E001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		37815BC0273E51F6001C7C17 = {
 			isa = PBXGroup;
 			children = (
+				37202DC12833930C001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj */,
 				37815BCB273E51F6001C7C17 /* AllenVungleSwift */,
 				37815BE5273E51F9001C7C17 /* AllenVungleSwiftTests */,
 				37815BEF273E51F9001C7C17 /* AllenVungleSwiftUITests */,
@@ -283,6 +300,12 @@
 			mainGroup = 37815BC0273E51F6001C7C17;
 			productRefGroup = 37815BCA273E51F6001C7C17 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 37202DC22833930C001CED28 /* Products */;
+					ProjectRef = 37202DC12833930C001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				37815BC8273E51F6001C7C17 /* AllenVungleSwift */,
@@ -291,6 +314,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		37202DC62833930E001CED28 /* AllenSwiftUI_7.0.0_IntegrationTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AllenSwiftUI_7.0.0_IntegrationTest.app;
+			remoteRef = 37202DC52833930E001CED28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		37815BC7273E51F6001C7C17 /* Resources */ = {
