@@ -9,12 +9,12 @@ import UIKit
 import SwiftUI
 
 class MyConstant: NSObject {
-    static let appId:String = "61111cfb6a9c96bffe5f9c88"
+    static let appId:String = "5df09ea62c378d001251fb1d"
     static let interstitialPlacement:String = "DEFAULT-7467473"
     static let rewardPlacement:String = "ALLENTESTREWARD-3710821"
     static let bannerPlacement:String = "BANNER_ALLEN_TEST-5090470"
     static let mrecPlacement:String = "ALLENTESTMREC-5581321"
-    static let nativePlacement:String = "NATIVEADS_TEST-3836470"
+    static let nativePlacement:String = "ALLEN_NATIVE_TEST-2262371"
     
     
     static let SCREEN_HEIGHT = UIScreen.main.bounds.size.height

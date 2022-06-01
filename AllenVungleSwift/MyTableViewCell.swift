@@ -9,12 +9,12 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var myCellBody: UILabel!
+    
 
     @IBOutlet weak var myContentView: UIView!
     @IBOutlet weak var myCellCTABtn: UIButton!
     @IBOutlet weak var myCellVungleView: VungleMediaView!
-    @IBOutlet weak var myCellRate: UILabel!
+    
     @IBOutlet weak var myCellSpon: UILabel!
     @IBOutlet weak var myCellTitle: UILabel!
     @IBOutlet weak var myCellIconView: UIImageView!

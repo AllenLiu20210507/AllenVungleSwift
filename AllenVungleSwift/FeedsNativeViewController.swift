@@ -19,7 +19,7 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       return 364
+       return 130
     }
 
     
@@ -49,17 +49,19 @@ class FeedsNativeViewController: UIViewController,UITableViewDelegate,UITableVie
                 myCell.myCellTitle.text = currentNativeAd.title
             print("allen__tableView---currentNativeAd.title",currentNativeAd.title)
                 let ratestring:String = NSString(format: "%.2f" , rate) as String
-                myCell.myCellRate.text = ratestring
-                myCell.myCellBody.text = currentNativeAd.bodyText
+//                myCell.myCellRate.text = ratestring
+//                myCell.myCellBody.text = currentNativeAd.bodyText
                 myCell.myCellIconView.image = currentNativeAd.iconImage
                 myCell.myCellSpon.text = currentNativeAd.sponsoredText
 //                myCell.myCellCTABtn.addTarget(self, action:Selector(("showAlert")), for:.touchUpInside)
             
                 // Set all UIViews as "clickable"
+            myCell.myCellVungleView.isHidden=true
+//            myCell.myCellBody.isHidden=true
+//            myCell.myCellRate.isHidden=true
+//                let clickableViews:Array<UIView> = [myCell.myCellIconView,myCell.myCellVungleView,myCell.myCellTitle,myCell.myCellBody]
 
-                let clickableViews:Array<UIView> = [myCell.myCellIconView,myCell.myCellVungleView,myCell.myCellTitle,myCell.myCellBody]
-
-                self.currentNativeAd.registerView(forInteraction: myCell.myContentView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self, clickableViews: clickableViews)
+                self.currentNativeAd.registerView(forInteraction: myCell.myContentView, mediaView: myCell.myCellVungleView, iconImageView: myCell.myCellIconView, viewController: self)
             print("allen__return myCell ",indexPath.row)
             return myCell
           
