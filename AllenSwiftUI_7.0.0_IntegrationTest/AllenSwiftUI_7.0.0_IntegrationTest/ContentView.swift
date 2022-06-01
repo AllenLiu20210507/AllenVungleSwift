@@ -18,6 +18,12 @@ struct ContentView: View {
         ScrollView {
              VStack() {
                IntestitialView()
+               Spacer()
+               RewardView()
+               Spacer()
+               MrecBannerView()
+               Spacer()
+               NativeAdView()
             }
         }
     }

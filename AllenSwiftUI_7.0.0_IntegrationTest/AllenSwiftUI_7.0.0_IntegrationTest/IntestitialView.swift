@@ -11,12 +11,13 @@ struct IntestitialView: View {
     @StateObject private var intersitialVM = InterstitialViewModel()
     var body: some View {
         VStack{
-            Text(intersitialVM.pid)
-                .foregroundColor(Color.orange)
+            Text("Interstitial:  "+intersitialVM.placementID)
+                .foregroundColor(Color.orange).padding()
             Button(self.intersitialVM.buttonText) {
                 self.intersitialVM.buttonAction()
             }
-            
+            .padding()
+        
         }
       
     }

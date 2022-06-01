@@ -16,7 +16,7 @@ class InterstitialViewModel: NSObject,ObservableObject,VungleInterstitialDelegat
    
     
     @Published var adState: AdState = .new
-    let pid = Configs().InsPid
+    
     
     var buttonText: String {
         switch self.adState {
@@ -86,7 +86,7 @@ class InterstitialViewModel: NSObject,ObservableObject,VungleInterstitialDelegat
 
 
     func interstitialAdDidLoad(_ interstitial: VungleInterstitial) {
-        print("[AllenTestApp log] interstitialAdDidLoad")
+        print("[AllenTestApp Log] interstitialAdDidLoad")
         adState = .loaded
     }
 

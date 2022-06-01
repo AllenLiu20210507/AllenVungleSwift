@@ -16,18 +16,22 @@
 		37202DEC28339890001CED28 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DEB28339890001CED28 /* Configs.swift */; };
 		37202DF22833AC38001CED28 /* InterstitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DF12833AC38001CED28 /* InterstitialViewModel.swift */; };
 		37202DF62833AC77001CED28 /* IntestitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37202DF52833AC77001CED28 /* IntestitialView.swift */; };
-		37202DFB2833C2E6001CED28 /* vng_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37202DF92833C256001CED28 /* vng_ios_sdk.framework */; platformFilter = ios; };
-		37202DFC2833C2E6001CED28 /* vng_ios_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37202DF92833C256001CED28 /* vng_ios_sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37C8A2E82834D8D400357D1C /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2E72834D8D400357D1C /* RewardView.swift */; };
+		37C8A2EA2834D8F000357D1C /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2E92834D8F000357D1C /* RewardViewModel.swift */; };
+		37C8A2EE2834DD6400357D1C /* MrecBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2ED2834DD6400357D1C /* MrecBannerViewModel.swift */; };
+		37C8A2F02834E2C300357D1C /* MrecBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2EF2834E2C300357D1C /* MrecBannerView.swift */; };
+		37C8A2F2283B84B300357D1C /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2F1283B84B300357D1C /* NativeAdView.swift */; };
+		37C8A2F4283B8E4F00357D1C /* NativeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8A2F3283B8E4F00357D1C /* NativeViewModel.swift */; };
+		37C8A301283DCB8600357D1C /* vng_ios_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C8A300283DCB8600357D1C /* vng_ios_sdk.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37202DFD2833C2E6001CED28 /* Embed Frameworks */ = {
+		37C8A2FF283DCB5000357D1C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37202DFC2833C2E6001CED28 /* vng_ios_sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +49,13 @@
 		37202DEB28339890001CED28 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		37202DF12833AC38001CED28 /* InterstitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewModel.swift; sourceTree = "<group>"; };
 		37202DF52833AC77001CED28 /* IntestitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntestitialView.swift; sourceTree = "<group>"; };
-		37202DF92833C256001CED28 /* vng_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = vng_ios_sdk.framework; sourceTree = "<group>"; };
+		37C8A2E72834D8D400357D1C /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		37C8A2E92834D8F000357D1C /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
+		37C8A2ED2834DD6400357D1C /* MrecBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrecBannerViewModel.swift; sourceTree = "<group>"; };
+		37C8A2EF2834E2C300357D1C /* MrecBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrecBannerView.swift; sourceTree = "<group>"; };
+		37C8A2F1283B84B300357D1C /* NativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
+		37C8A2F3283B8E4F00357D1C /* NativeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewModel.swift; sourceTree = "<group>"; };
+		37C8A300283DCB8600357D1C /* vng_ios_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = vng_ios_sdk.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37202DFB2833C2E6001CED28 /* vng_ios_sdk.framework in Frameworks */,
+				37C8A301283DCB8600357D1C /* vng_ios_sdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,12 @@
 				37202DDE28339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld */,
 				37202DD928339415001CED28 /* Preview Content */,
 				37202DEB28339890001CED28 /* Configs.swift */,
+				37C8A2E72834D8D400357D1C /* RewardView.swift */,
+				37C8A2E92834D8F000357D1C /* RewardViewModel.swift */,
+				37C8A2ED2834DD6400357D1C /* MrecBannerViewModel.swift */,
+				37C8A2EF2834E2C300357D1C /* MrecBannerView.swift */,
+				37C8A2F1283B84B300357D1C /* NativeAdView.swift */,
+				37C8A2F3283B8E4F00357D1C /* NativeViewModel.swift */,
 			);
 			path = AllenSwiftUI_7.0.0_IntegrationTest;
 			sourceTree = "<group>";
@@ -104,7 +120,7 @@
 		37202DE628339599001CED28 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37202DF92833C256001CED28 /* vng_ios_sdk.framework */,
+				37C8A300283DCB8600357D1C /* vng_ios_sdk.xcframework */,
 			);
 			path = frameworks;
 			sourceTree = "<group>";
@@ -119,7 +135,7 @@
 				37202DCC28339414001CED28 /* Sources */,
 				37202DCD28339414001CED28 /* Frameworks */,
 				37202DCE28339414001CED28 /* Resources */,
-				37202DFD2833C2E6001CED28 /* Embed Frameworks */,
+				37C8A2FF283DCB5000357D1C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,13 +196,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C8A2EA2834D8F000357D1C /* RewardViewModel.swift in Sources */,
 				37202DEC28339890001CED28 /* Configs.swift in Sources */,
 				37202DDD28339415001CED28 /* Persistence.swift in Sources */,
 				37202DF22833AC38001CED28 /* InterstitialViewModel.swift in Sources */,
+				37C8A2F4283B8E4F00357D1C /* NativeViewModel.swift in Sources */,
+				37C8A2E82834D8D400357D1C /* RewardView.swift in Sources */,
 				37202DF62833AC77001CED28 /* IntestitialView.swift in Sources */,
 				37202DE028339415001CED28 /* AllenSwiftUI_7_0_0_IntegrationTest.xcdatamodeld in Sources */,
 				37202DD628339414001CED28 /* ContentView.swift in Sources */,
+				37C8A2F2283B84B300357D1C /* NativeAdView.swift in Sources */,
+				37C8A2F02834E2C300357D1C /* MrecBannerView.swift in Sources */,
 				37202DD428339414001CED28 /* AllenSwiftUI_7_0_0_IntegrationTestApp.swift in Sources */,
+				37C8A2EE2834DD6400357D1C /* MrecBannerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
