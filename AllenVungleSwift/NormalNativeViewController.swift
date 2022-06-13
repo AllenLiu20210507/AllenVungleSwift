@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
+class NormalNativeViewController: UIViewController,VungleNativeAdDelegate,VungleSDKDelegate {
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var vungleMediaView: VungleMediaView!
     @IBOutlet weak var rateNumberLabel: UILabel!
@@ -92,9 +92,10 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
     //pragma mark - VungleNativeAdDelegate Methods
 
     func nativeAdDidLoad(_ nativeAd: VungleNativeAd) {
+        
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
-        print("nativeAdDidLoad",nativeAd)
+        print("allentest_nativeAdDidLoad",nativeAd)
         let rate = nativeAd.adStarRating
         titleLabel.text = nativeAd.title
         let ratestring:String = NSString(format: "%.2f" , rate) as String
@@ -134,20 +135,28 @@ class NormalNativeViewController: UIViewController,VungleNativeAdDelegate {
     func nativeAdDidTrackImpression(_ nativeAd: VungleNativeAd) {
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
-        print("nativeAdDidTrackImpression",nativeAd)
+        print("allentest_nativeAdDidTrackImpression",nativeAd)
     }
     func nativeAd(_ nativeAd: VungleNativeAd, didFailWithError error: Error) {
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
-        print("didFailWithError",error)
+        print("allentest_didFailWithError",error)
     }
     func nativeAdDidClick(_ nativeAd: VungleNativeAd) {
-        print("didFailWithError",nativeAd)
+        print("allentest_didFailWithError",nativeAd)
     }
     func nativeAd(_ nativeAd: VungleNativeAd, didFailToPlayWithError error: Error) {
         self.loadingView.stopAnimating()
         self.loadingView.removeFromSuperview()
-        print("didFailToPlayWithError",error)
+        print("allentest_didFailToPlayWithError",error)
     }
+    
+    
+    func vungleAdPlayabilityUpdate(_ isAdPlayable: Bool, placementID: String?, error: Error?) {
+        print("allentest_vungleAdPlayabilityUpdate___isAdPlayable",isAdPlayable)
+        print("allentest_vungleAdPlayabilityUpdate___placementID",placementID!)
+    }
+    
+
 
 }
